@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Custom Video Player</title>
+</head>
+<body>
+    <h1>CUSTOM VIDEO PLAYER</h1>
+    <div class="screen">
+        <video id='video' src="video/video.mp4" poster="video/poster.png" ></video>
+    </div>
+    <div class="controls">
+        <button class="btn play" id="play"><i class="fas fa-play"></i></button>
+        <button class="btn stop" id='stop'><i class="fas fa-stop"></i></button>
+        <input type="range" id="progress" class='progress' min="0" max="100">
+        <span class="timelapse" id="timelapse">00:00</span>
+    </div>
+    <script src="https://kit.fontawesome.com/7972f83d1a.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

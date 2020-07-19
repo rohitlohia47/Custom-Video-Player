@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('video/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    color: white;
+    font-family: sans-serif;
+}
+
+.screen{
+    width: 60%;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    margin: 0 auto;
+    border: none;
+}
+.screen video{
+    width:100%;
+    background-color: black;
+}
+.screen video:hover{ 
+    cursor: pointer;
+}
+.controls {
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 224, 224);
+    margin: 0;
+    border-radius: 0 0 10px 10px;
+}
+.progress{
+    width: 90%;
+    outline: none;
+}
+.btn{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+.play{
+    color: green;
+    cursor: pointer;
+    outline: none;
+}
+.stop{
+    color: rgba(255, 0, 0);
+    cursor: pointer;
+    outline: none;
+}
+.timelapse{
+    margin-left:5px;
+}
+
+@media (max-width:820px){
+    .screen{
+        width: 90%;
+    }
+    .controls{
+        width: 90%;
+    }
+}
